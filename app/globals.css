@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+    --color-bg-top: rgba(100, 153, 233, 0.9);
+    --color-bg-bottom: rgba(190, 255, 247, 0.8);
+}
+
+@layer components {
+    .input-style {
+        @apply bg-white placeholder:text-gray-400 px-4 py-2 rounded-lg focus:outline-hidden focus:shadow-xl/30 focus:shadow-indigo-600;
+    }
+}
