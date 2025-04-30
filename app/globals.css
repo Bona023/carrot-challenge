@@ -17,6 +17,6 @@
         @apply bg-[#0DCEDA] text-2xl text-[#FBFF00] font-bold text-shadow-lg text-center py-2 rounded-lg shadow-btn;
     }
     .bg-box {
-        @apply w-sm h-[800px] bg-gradient-to-b from-bg-top to-bg-bottom mx-auto mt-20 rounded-2xl flex-col py-10 px-8;
+        @apply w-sm h-[800px] bg-gradient-to-b from-bg-top to-bg-bottom mx-auto mt-20 rounded-2xl flex flex-col py-10 px-8;
     }
 }

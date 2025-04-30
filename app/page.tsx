@@ -11,13 +11,13 @@ export default function Home() {
                     href="/create-account"
                     className="form-btn"
                 >
-                    가입하기
+                    Sign Up
                 </Link>
                 <Link
                     href="log-in"
                     className="form-btn"
                 >
-                    로그인
+                    Log In
                 </Link>
             </div>
         </div>
