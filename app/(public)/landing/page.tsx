@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function Landing() {
     return (
         <div className="bg-box">
             <div className="py-12 text-center mb-50">

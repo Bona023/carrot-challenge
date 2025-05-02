@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "challenge-login",
-    description: "carrot challenge",
+    title: {
+        template: "%s | Carrot Challenge",
+        default: "Carrot Challenge",
+    },
+    description: "challenge project",
 };
 
 export default function RootLayout({
@@ -13,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-white">{children}</body>
+            <body>{children}</body>
         </html>
     );
 }

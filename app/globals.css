@@ -7,16 +7,16 @@
 }
 
 @layer components {
+    .app-layout {
+        @apply h-[100vh] w-[400px] bg-gradient-to-b from-bg-top to-bg-bottom mx-auto;
+    }
     .input-style {
         @apply bg-white placeholder:text-gray-400 px-4 py-2 rounded-lg focus:outline-hidden focus:shadow-xl/30 focus:shadow-indigo-600;
     }
     .form-btn {
         @apply bg-[#687EFF] text-center text-white text-xl py-2 rounded-lg cursor-pointer  font-bold shadow-btn hover:bg-[#FFFD8C] hover:text-blue-500 disabled:cursor-not-allowed disabled:bg-indigo-950/30 disabled:text-gray-500;
     }
-    .welcome-box {
-        @apply bg-[#0DCEDA] text-2xl text-[#FBFF00] font-bold text-shadow-lg text-center py-2 rounded-lg shadow-btn;
-    }
     .bg-box {
-        @apply w-sm h-[800px] bg-gradient-to-b from-bg-top to-bg-bottom mx-auto mt-20 rounded-2xl flex flex-col py-10 px-8;
+        @apply grid grid-cols-1 pt-10 px-8;
     }
 }
