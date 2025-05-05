@@ -6,6 +6,12 @@
     --shadow-btn: 4px 8px 10px rgba(22, 17, 121, 0.4);
 }
 
+@layer utilities {
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 @layer components {
     .app-layout {
         @apply h-[100vh] w-[400px] bg-gradient-to-b from-bg-top to-bg-bottom mx-auto;

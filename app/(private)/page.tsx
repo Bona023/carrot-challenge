@@ -1,3 +1,4 @@
+import AddTweet from "@/components/add-tweet";
 import ListTweet from "@/components/tweet";
 import db from "@/lib/db";
 
@@ -17,10 +18,8 @@ export default async function Home() {
     const tweets = await getTweets();
     return (
         <div className="bg-box">
-            <div className="text-center py-4">
-                <h1 className="text-3xl font-bold text-white">Home</h1>
-            </div>
-            <div className="flex flex-col gap-3 py-3">
+            <AddTweet />
+            <div className="flex flex-col gap-3 py-3 h-[55vh] overflow-y-auto scrollbar-hidden">
                 {tweets.map((tweet) => (
                     <ListTweet
                         key={tweet.id}
